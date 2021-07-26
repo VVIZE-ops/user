@@ -15,6 +15,20 @@ public class Person {
 
     private String userHomeAddress;   //家庭住址
 
+    protected Person(){ //无参数
+
+    }
+
+    public Person(int userId, String userNamem,String userGender,int userIDNuber,int userPhone,LocalDate userBir,String userHomeAddress){
+        this.userId = userid;
+        this.userName=username;
+        this.userGender=usergender;
+        this.userIDNuber=useridnumber;
+        this.userPhone=userphone;
+        this.userBir=userbir;
+        this.userHomeAddress=userhomeaddress;
+    }
+
 
 
     public int getUserId(){
