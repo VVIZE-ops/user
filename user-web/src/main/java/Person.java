@@ -2,6 +2,7 @@ package com.userweb.dao;
 
 import javax.xml.crypto.Data;
 import java.util.*;
+import java.time.*;
 
 public class Person {
     private int userId;               //用户id
@@ -9,7 +10,8 @@ public class Person {
     private String userGender;        //用户性别
     private int userIDNuber;          //身份证号码
     private int userPhone;            //手机号
-    private Date userBir;             //生日
+    //private Date userBir;             //生日
+    private LocalDate userBir;         //生日
     private String userHomeAddress;   //家庭住址
 
 
@@ -54,10 +56,10 @@ public class Person {
     }
 
 
-    public Date getUserBir(){
+    public LocalDate getUserBir(){
         return userBir;
     }
-    public void setUserBir(Data userbir){
+    public void setUserBir(LocalDate userbir){
         this.userBir=userbir;
     }
 
